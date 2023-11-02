@@ -1,0 +1,17 @@
+body {
+    font-family: "Open Sans", "sans-serif";
+    color: #272829;
+}
+
+a {
+    color: rgb(19, 109, 226);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(13, 93, 142);
+    text-decoration: none;
+}
+ h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans" sans-serif;
+ }
