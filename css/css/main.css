@@ -4,12 +4,12 @@ body {
 }
 
 a {
-    color: rgb(246, 174, 18);
+    color: rgba(231, 126, 8, 0.614);
     text-decoration: none;
 }
 
 a:hover{
-    color: rgb(220, 155, 33);
+    color: rgb(220, 111, 33);
     text-decoration: none;
 }
  h1, h2, h3, h4, h5, h6 {
@@ -30,11 +30,11 @@ a:hover{
 }
 .back-to-top i {
     font-size: 28px;
-    color: #fff;
+    color: #f6efef;
     line-height: 0;
 }
 .back-to-top:hover{
-    background: #2eafec;
+    background: #f79502;
     color: #fff;
 }
 .back-to-top.active{
@@ -52,7 +52,7 @@ a:hover{
     width: 300px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
-    background: #040b14;
+    background: rgb(235, 201, 151);
     overflow-y: auto;
 }
 
@@ -60,7 +60,7 @@ a:hover{
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #2c2f3f;
+    border: 8px solid #e09540;
 }
 #header .profile h1 {
     font-size: 24px;
@@ -145,7 +145,7 @@ a:hover{
 .nav-menu a:focus i {
     font-size: 24px;
     padding-right: 8px;
-    color: #ebdc0b;;
+    color: #eb740b;;
 }
 .nav-menu a:hover,
 .nav-menu .active,
@@ -189,3 +189,119 @@ a:hover{
     left: 0;
 }
 
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero.png") top center;
+    background-size: cover;
+}
+#hero::before{
+    content: "" ;
+    background: rgba(163, 117, 44, 0.836)
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+#hero .hero-container{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+#hero h1{
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #cc7116;
+}
+#hero p{
+    color: #eb740b;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+}
+#hero p span{
+    color: #f79502;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #b7922c;
+}
+
+@media (min-width: 1024px){
+    #hero {
+        background-attachment: fixed;
+
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+/* Section Geral */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg {
+    background: #f5f8fd;
+}
+.section-tittle {
+    padding-bottom: 30px;
+}
+.section-tittle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+.section-tittle h2:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+.section-tittle p {
+    margin-bottom: 0;
+
+}
+
+/* Sobre = about */
+.about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #212431;
+}
+.about .container ul li{
+    list-style: none;
+    padding: 0;
+}
+.about .content ul li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.about .content ul strong{
+    margin-right: 10px;
+}
+.about .content ul i{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #f79502;
+    line-height: 0;
+}
+.about .content p:last-child{
+    margin-bottom: 0;
+}
